@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.t1 {
+  background: linear-gradient(-45deg, #1aded7, #fba8be, #4acdcb);
+  background-size: 400% 400%;
+  animation: gradient 6s ease infinite;
+}
+.a {
+  background: linear-gradient(-45deg, #1c0d10, #2a1318);
+  background-size: 400% 400%;
+  animation: gradient 3s ease infinite;
+  clip-path: ellipse(75% 100% at 50% 100%);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.main-bg {
+  background: linear-gradient(#070029, #070022, #2a1318);
+}
+
+.q {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='800' preserveAspectRatio='none' viewBox='0 0 1440 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1388%26quot%3b)' fill='none'%3e%3crect width='1440' height='800' x='0' y='0' fill='url(%23SvgjsLinearGradient1389)'%3e%3c/rect%3e%3cpath d='M0 0L487.23 0L0 8.81z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M0 8.81L487.23 0L817.97 0L0 255.86z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M0 255.86L817.97 0L926.5 0L0 347.88z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M0 347.88L926.5 0L1095.26 0L0 376.82z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M1440 800L1412.05 800L1440 783.81z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M1440 783.81L1412.05 800L1372.11 800L1440 475.62999999999994z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M1440 475.63L1372.11 800L556.2399999999999 800L1440 427.69z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M1440 427.69L556.24 800L421.52 800L1440 226.57999999999998z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1388'%3e%3crect width='1440' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='11.11%25' y1='-20%25' x2='88.89%25' y2='120%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1389'%3e%3cstop stop-color='rgba(255%2c 149%2c 177%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(38%2c 207%2c 201%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  background-position: auto;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.g {
+  background-color: #212121;
+  opacity: 1;
+  background: radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)),
+    radial-gradient(#868686 2px, transparent 2px),
+    radial-gradient(#868686 2px, #212121 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+}
+
+
+.projects-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+.content .content-overlay {
+  background: radial-gradient(rgba(0,0,0,0.15 ),rgba(0,0,0,0.7));
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+.fadeIn-left{
+  left: 20%;
+}
+
+.fadeIn-right{
+  left: 80%;
+}
+
+
+
+.border-move-animation::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+}
+
+.border-move-animation:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
