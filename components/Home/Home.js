@@ -28,12 +28,15 @@ const Home = () => {
       {/* adding the all the social links */}
       <div className={style.social}></div>
       <img src="/me.webp" className={style.img} />
+    
       <div className={style.text} style={{ fontFamily: "Poppins, sans-serif" }}>
         <span className={`${style.char} ${letter === 'H' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('H')} >H</span>
         <span className={`${style.char1} ${letter === 'i' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('i')}>i,</span>
         <span className={`${style.char1} ${letter === 'I' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('I')}>I</span>
         <span className={`${style.char} ${letter === 'A' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('A')}>A</span>
         <span className={`${style.char1} ${letter === 'm' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('m')}>m</span>
+        <div className="flex">
+
         <span className={`${style.char} ${letter === 'S' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('S')}>S</span>
         <span className={`${style.char} ${letter === 'h' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('h')}>h</span>
         <span className={`${style.char} ${letter === 'a' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('a')}>a</span>
@@ -42,21 +45,33 @@ const Home = () => {
         <span className={`${style.char} ${letter === 'q' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('q')}>q</span>
         <span className={`${style.char2} ${letter === 'u' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('u')}>u</span>
         <span className={`${style.char2} ${letter === 'e5' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('e5')}>e</span>
+</div>
+<div className="flex">
+
         <span className={`${style.char} ${letter === 'F' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('F')}>F</span>
         <span className={`${style.char} ${letter === 'u1' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('u1')}>u</span>
         <span className={`${style.char} ${letter === 'l' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('l')}>l</span>
         <span className={`${style.char4} ${letter === 'l1' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('l1')}>l</span>
+</div>
+<div className="flex">
+
         <span className={`${style.char} ${letter === 'S1' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('S1')}>S</span>
         <span className={`${style.char} ${letter === 't' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('t')}>t</span>
         <span className={`${style.char} ${letter === 'a1' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('a1')}>a</span>
         <span className={`${style.char} ${letter === 'c' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('c')}>c</span>
         <span className={`${style.char1} ${letter === 'k' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('k')}>k</span>
+</div>
+<div className="flex">
+
         <span className={`${style.char} ${letter === 'N' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('N')}>N</span>
         <span className={`${style.char} ${letter === 'e' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('e')}>e</span>
         <span className={`${style.char} ${letter === 'x' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('x')}>x</span>
         <span className={`${style.char} ${letter === 't1' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('t1')}>t</span>
         <span className={`${style.char} ${letter === 'J' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('J')}>J</span>
         <span className={`${style.char5} ${letter === 'S2' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('S2')}>S</span>
+</div>
+<div className="flex">
+
         <span className={`${style.char} ${letter === 'D' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('D')}>D</span>
         <span className={`${style.char} ${letter === 'e1' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('e1')}>e</span>
         <span className={`${style.char} ${letter === 'v' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('v')}>v</span>
@@ -66,6 +81,7 @@ const Home = () => {
         <span className={`${style.char} ${letter === 'p' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('p')}>p</span>
         <span className={`${style.char} ${letter === 'e3' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('e3')}>e</span>
         <span className={`${style.char} ${letter === 'r1' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('r1')}>r</span>
+</div>  
       </div>
       <div className={style.info}>
         <p className={style.line}>
