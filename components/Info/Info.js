@@ -2,8 +2,8 @@ import React from "react";
 import { FaTrophy } from "react-icons/fa";
 const style = {
   bg: "",
-  wrapper: " h-[60vh] w-[90%] sm:w-[85%] md:w-[75%] mx-auto",
-  info: "text-stone-300 text-2xl md:text-3xl my-16",
+  wrapper: " h-[50vh] w-[90%] sm:w-[85%] md:w-[75%] mx-auto",
+  info: "text-stone-300 text-2xl md:text-3xl my-12",
   single: "flex items-center  text-stone-400",
   achieveInfo:'',
 };
@@ -22,11 +22,13 @@ const Info = () => {
         <div className={style.achieve}>
           <div className={style.single}>
             <FaTrophy className="text-yellow-400 text-3xl mx-6 my-2" />
-            <p className={style.achieveInfo}>Complete ReactJS Bootcamp 2021 (Courseera) </p>
+            <a target="__blank" href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-e560c14c-db3e-4df6-96dc-976a800978d9.pdf">
+            <p className={style.achieveInfo}>Complete ReactJS Bootcamp 2021 (Courseera) </p></a>
           </div>
           <div className={style.single}>
             <FaTrophy className="text-yellow-400 text-3xl mx-6 my-2" />
-            <p className={style.achieveInfo}>Full Stack Webdeveloper Bootcamp 2020 (Udemy) </p>
+            <a target="__blank" href="https://www.udemy.com/certificate/UC-b587d542-b0fd-480d-bc00-4081a41291d6/">
+            <p className={style.achieveInfo}>Full Stack Webdeveloper Bootcamp 2020 (Udemy) </p></a>
           </div>
         </div>
       </div>
