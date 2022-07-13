@@ -12,11 +12,11 @@ const style = {
   line: "max-w-fit hover:scale-[1.1] transform duration-[400ms] my-5",
   line1: " border-r-2 border-stone-800 max-w-fit mx-8 my-4",
   link: "decoration-none border-move-animation max-w-fit",
-  char:`hover:text-teal-300 max-w-fit text-7xl md:text-7xl lg:text-9xl`,
-  char1:`hover:text-teal-300 mr-7 text-7xl md:text-7xl lg:text-9xl`,
-  char2:`hover:text-teal-300 mr-1 text-7xl md:text-7xl lg:text-9xl`,
-  char4:`hover:text-teal-300 mr-0 text-7xl md:text-7xl lg:text-9xl`,
-  char5:`hover:text-teal-300 mr-16 text-7xl md:text-7xl lg:text-9xl`,
+  char:`hover:text-teal-300 max-w-fit text-7xl md:text-8xl lg:text-8xl`,
+  char1:`hover:text-teal-300 mr-7 text-7xl md:text-8xl lg:text-8xl`,
+  char2:`hover:text-teal-300 mr-1 text-7xl md:text-8xl lg:text-8xl`,
+  char4:`hover:text-teal-300 mr-0 text-7xl md:text-8xl lg:text-8xl`,
+  char5:`hover:text-teal-300 mr-16 text-7xl md:text-8xl lg:text-8xl`,
 };
 const Home = () => {
   const [letter,setLetter] = useState('')
