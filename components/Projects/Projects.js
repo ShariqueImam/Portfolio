@@ -1,7 +1,7 @@
 import React from "react";
 import SingleProjectDisplay from '../SingleProjectDisplay/SingleProjectDisplay'
 const style = {
-  wrapper: "bg-[rgba(0,0,0,0.75)] w-[90%] sm:w-[85%] md:w-[95%] lg:w-[80%] mx-auto",
+  wrapper: "bg-[rgba(0,0,0,0.75)] w-[90%] sm:w-[85%] md:w-[95%] lg:w-[80%] mx-auto my-48 md:my-3",
   heading: "text-stone-300 text-2xl md:text-4xl ",
   container:'flex items-center justify-around flex-wrap',
 };

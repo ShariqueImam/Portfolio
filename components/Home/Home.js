@@ -5,15 +5,18 @@ import 'animate.css';
 const style = {
   social: "absolute",
   wrapper:
-    "px-24 q w-[100vw] h-[100vh] bg-gradient-to-r from-yellow-300 to-red-300 flex flex-col justify-center",
-  img: "rounded-full border-2 border-black h-[11vh] w-[5.5vw] my-8",
-  text: "text-4xl md:text-6xl lg:text-8xl w-[95%] md:w-[70%] font-bold flex flex-wrap",
-  info: "flex my-12",
-  line: "max-w-fit hover:scale-[1.1] transform duration-[400ms]",
-  line1: " border-r-2 border-stone-800 max-w-fit mx-8",
+    "px-3 md:px-24 q w-[100vw] h-[100vh] bg-gradient-to-r from-yellow-300 to-red-300 flex flex-col justify-center",
+  img: "rounded-full border-2 border-black mx-auto h-[12vh] w-[24vw] md:mx-0 md:h-[12vh] md:w-[10vw] lg:h-[11vh] lg:w-[5.5vw] my-8",
+  text: "text-4xl md:text-6xl lg:text-8xl w-[95%] md:w-[85%] lg:w-[63%] font-bold flex flex-wrap",
+  info: "flex my-12 flex-wrap jusitfy-center",
+  line: "max-w-fit hover:scale-[1.1] transform duration-[400ms] my-5",
+  line1: " border-r-2 border-stone-800 max-w-fit mx-8 my-4",
   link: "decoration-none border-move-animation max-w-fit",
-  char:`hover:text-teal-300 max-w-fit`,
-  char1:`hover:text-teal-300 mr-5`
+  char:`hover:text-teal-300 max-w-fit text-7xl md:text-8xl lg:text-9xl`,
+  char1:`hover:text-teal-300 mr-7 text-7xl md:text-8xl lg:text-9xl`,
+  char2:`hover:text-teal-300 mr-1 text-7xl md:text-8xl lg:text-9xl`,
+  char4:`hover:text-teal-300 mr-0 text-7xl md:text-8xl lg:text-9xl`,
+  char5:`hover:text-teal-300 mr-16 text-7xl md:text-8xl lg:text-9xl`,
 };
 const Home = () => {
   const [letter,setLetter] = useState('')
@@ -36,11 +39,13 @@ const Home = () => {
         <span className={`${style.char} ${letter === 'a' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('a')}>a</span>
         <span className={`${style.char} ${letter === 'r' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('r')}>r</span>
         <span className={`${style.char} ${letter === 'i1' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('i1')}>i</span>
-        <span className={`${style.char1} ${letter === 'q' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('q')}>q,</span>
+        <span className={`${style.char} ${letter === 'q' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('q')}>q</span>
+        <span className={`${style.char2} ${letter === 'u' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('u')}>u</span>
+        <span className={`${style.char2} ${letter === 'e5' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('e5')}>e</span>
         <span className={`${style.char} ${letter === 'F' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('F')}>F</span>
-        <span className={`${style.char} ${letter === 'u' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('u')}>u</span>
+        <span className={`${style.char} ${letter === 'u1' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('u1')}>u</span>
         <span className={`${style.char} ${letter === 'l' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('l')}>l</span>
-        <span className={`${style.char1} ${letter === 'l1' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('l1')}>l</span>
+        <span className={`${style.char4} ${letter === 'l1' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('l1')}>l</span>
         <span className={`${style.char} ${letter === 'S1' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('S1')}>S</span>
         <span className={`${style.char} ${letter === 't' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('t')}>t</span>
         <span className={`${style.char} ${letter === 'a1' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('a1')}>a</span>
@@ -51,7 +56,7 @@ const Home = () => {
         <span className={`${style.char} ${letter === 'x' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('x')}>x</span>
         <span className={`${style.char} ${letter === 't1' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('t1')}>t</span>
         <span className={`${style.char} ${letter === 'J' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('J')}>J</span>
-        <span className={`${style.char1} ${letter === 'S2' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('S2')}>S</span>
+        <span className={`${style.char5} ${letter === 'S2' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('S2')}>S</span>
         <span className={`${style.char} ${letter === 'D' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('D')}>D</span>
         <span className={`${style.char} ${letter === 'e1' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('e1')}>e</span>
         <span className={`${style.char} ${letter === 'v' && 'animate__animated animate__rubberBand'}`} onMouseLeave={()=>setLetter('')} onMouseEnter={()=>handle('v')}>v</span>

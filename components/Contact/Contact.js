@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
 const style = {
-  wrapper: " w-[90%] md:w-[85%] mx-auto mt-24 p-16",
+  wrapper: " w-[90%] md:w-[85%] mx-auto mt-24 px-6 py-12 md:p-16",
   heading: "text-gray-50 text-3xl md:text-5xl lg:text-6xl my-12",
   description: "text-stone-400 w-[90%] md:w-[90%] mx-auto",
-  info: "flex my-12 text-stone-200 w-[90%] md:w-[90%] mx-auto",
-  line: "font-semibold max-w-fit border-move-animation-contact",
-  line1: "border-r-2 border-stone-800 max-w-fit mx-8",
+  info: "flex my-12 text-stone-200 w-[90%] md:w-[90%] mx-auto flex-wrap",
+  line: "font-semibold max-w-fit border-move-animation-contact mx-3 my-2",
+  line1: "border-r-2 border-stone-800 max-w-fit mx-8 my-1",
   link: "decoration-none border-move-animation max-w-fit",
 };
 const Contact = () => {
