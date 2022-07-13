@@ -5,8 +5,8 @@ const style = {
   heading: "text-gray-50 text-3xl md:text-5xl lg:text-6xl my-12",
   description: "text-stone-400 w-[90%] md:w-[90%] mx-auto",
   info: "flex my-12 text-stone-200 w-[90%] md:w-[90%] mx-auto",
-  line: "font-semibold max-w-fit ",
-  line1: " border-r-2 border-stone-800 max-w-fit mx-8",
+  line: "font-semibold max-w-fit border-move-animation-contact",
+  line1: "border-r-2 border-stone-800 max-w-fit mx-8",
   link: "decoration-none border-move-animation max-w-fit",
 };
 const Contact = () => {
@@ -42,6 +42,17 @@ const Contact = () => {
         {" "}
           <a href=" https://www.fiverr.com/shariqueimam" target="_blank" className={style.link}>
              Fiverr
+          </a>
+        </p>
+        <p className={style.line1}></p>
+        <p className={style.line}>
+          {" "}
+          <a
+            href="https://www.upwork.com/freelancers/~01b050b4961e4c1e70?viewMode=1"
+            target="_blank"
+            className={style.link}
+          >
+            Upwork
           </a>
         </p>
         <p className={style.line1}></p>

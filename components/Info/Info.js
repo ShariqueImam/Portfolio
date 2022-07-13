@@ -23,12 +23,12 @@ const Info = () => {
           <div className={style.single}>
             <FaTrophy className="text-yellow-400 text-3xl mx-6 my-2" />
             <a target="__blank" href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-e560c14c-db3e-4df6-96dc-976a800978d9.pdf">
-            <p className={style.achieveInfo}>Complete ReactJS Bootcamp 2021 (Courseera) </p></a>
+            <p className={style.achieveInfo}>Complete ReactJS Guide 2021 (Udemy) </p></a>
           </div>
           <div className={style.single}>
             <FaTrophy className="text-yellow-400 text-3xl mx-6 my-2" />
             <a target="__blank" href="https://www.udemy.com/certificate/UC-b587d542-b0fd-480d-bc00-4081a41291d6/">
-            <p className={style.achieveInfo}>Full Stack Webdeveloper Bootcamp 2020 (Udemy) </p></a>
+            <p className={style.achieveInfo}>Full Stack Webdeveloper Bootcamp 2021 (Udemy) </p></a>
           </div>
         </div>
       </div>

@@ -141,11 +141,24 @@
   display: block;
   width: 0;
   height: 2px;
-  background: white;
+  background: black;
   transition: width 0.3s;
 }
 
 .border-move-animation:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+.border-move-animation-contact::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+}
+
+.border-move-animation-contact:hover::after {
   width: 100%;
   transition: width 0.3s;
 }

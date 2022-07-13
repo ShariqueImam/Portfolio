@@ -12,8 +12,8 @@ const Projects = () => {
       {/* projects container */}
       <div className={style.container}>
         <SingleProjectDisplay heading={'ElRoyle Restaurant'} img={'/p1.png'} description={'The restuarant was designed with the history and soft industrial dining room.'} code={'https://github.com/ShariqueImam/elroyle'} visit={'https://shariqel.vercel.app'}/>
-        <SingleProjectDisplay heading={'Okeere Store'} img={'/p1.png'} description={'Okeere is an e-commerce store to buy all sort of electric and daily goods'} code={'https://github.com/ShariqueImam/okeere  '} visit={'https://okeere.vercel.app'}/>
-        <SingleProjectDisplay heading={'Power Ranger Games'} img={'/p1.png'} description={'An flash less site to play power ranger retro games without any plugin and lag'} code={'https://github.com/ShariqueImam/elroyle'} visit={'https://shariqel.vercel.app'}/>
+        <SingleProjectDisplay heading={'Okeere Store'} img={'/okeer.webp'} description={'Okeere is an e-commerce store to buy all sort of electric and daily goods'} code={'https://github.com/ShariqueImam/okeere  '} visit={'https://okeere.vercel.app'}/>
+        <SingleProjectDisplay heading={'Power Ranger Games'} img={'/Power.webp'} description={'An flash less site to play power ranger retro games without any plugin and lag'} code={'https://github.com/ShariqueImam/powerranger'} visit={'https://shariqel.vercel.app'}/>
       </div>
     </div>
   );

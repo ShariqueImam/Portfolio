@@ -2,11 +2,12 @@ import React from "react";
 import Image from "next/image";
 const style = {
   social: "absolute",
-  wrapper: "px-24 q w-[100vw] h-[100vh] bg-gradient-to-r from-yellow-300 to-red-300 flex flex-col justify-center",
-  img: "rounded-full border-2 border-black h-[11vh] w-[6vw] my-8",
+  wrapper:
+    "px-24 q w-[100vw] h-[100vh] bg-gradient-to-r from-yellow-300 to-red-300 flex flex-col justify-center",
+  img: "rounded-full border-2 border-black h-[11vh] w-[5.5vw] my-8",
   text: "text-4xl md:text-6xl lg:text-8xl w-[95%] md:w-[70%] font-bold",
   info: "flex my-12",
-  line: "font-semibold max-w-fit ",
+  line: "max-w-fit hover:scale-[1.1] transform duration-[400ms]",
   line1: " border-r-2 border-stone-800 max-w-fit mx-8",
   link: "decoration-none border-move-animation max-w-fit",
 };
@@ -22,22 +23,45 @@ const Home = () => {
       <div className={style.info}>
         <p className={style.line}>
           Visit{" "}
-          <a href="https://github.com/ShariqueImam" target="_blank" className={style.link}>
+          <a
+            href="https://github.com/ShariqueImam"
+            target="_blank"
+            className={style.link}
+          >
             My Github
           </a>
         </p>
         <p className={style.line1}></p>
         <p className={style.line}>
-        Visit{" "}
-          <a href="https://dribbble.com/ShariqImam" target="_blank" className={style.link}>
+          Visit{" "}
+          <a
+            href="https://dribbble.com/ShariqImam"
+            target="_blank"
+            className={style.link}
+          >
             My Dribbble
           </a>
         </p>
         <p className={style.line1}></p>
         <p className={style.line}>
-        {" "}
-          <a href=" https://www.fiverr.com/shariqueimam" target="_blank" className={style.link}>
-             Fiverr
+          {" "}
+          <a
+            href="https://www.fiverr.com/shariqueimam"
+            target="_blank"
+            className={style.link}
+          >
+            Fiverr
+          </a>
+        </p>
+        <p className={style.line1}></p>
+        <p className={style.line}>
+          {" "}
+          <a
+            href="https://www.upwork.com/freelancers/~01b050b4961e4c1e70?viewMode=1"
+            target="_blank"
+            className={style.link}
+          >
+            Upwork
           </a>
         </p>
         <p className={style.line1}></p>
