@@ -12,7 +12,6 @@ const App = (props) => {
       <Projects />
       <Skills />
       <div className="bg-[rgba(0,0,0,0.7)]">
-
       <Contact />
       </div>
     </div>
